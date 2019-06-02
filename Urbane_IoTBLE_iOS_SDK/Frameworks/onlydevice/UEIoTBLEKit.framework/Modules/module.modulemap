@@ -1,0 +1,6 @@
+framework module UEIoTBLEKit {
+  umbrella header "UEIoTBLEKit.h"
+
+  export *
+  module * { export * }
+}

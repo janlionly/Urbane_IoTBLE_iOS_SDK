@@ -121,7 +121,7 @@ FOUNDATION_EXPORT NSString *const IOTCommandBatteryBMSWorkModeKey;  // 0: init, 
 
 - (void)startScanningDidDiscoverScootersBlock:(void(^)(NSArray <NSDictionary *>* _Nullable))scooterInfosBlock;  // scanning all scooters
 - (void)cancelScan;     // cancel scan scooters
-- (void)connectScooterWithMACAddress:(NSString *)macAddress completion:(void(^)(BOOL))completion;    // connect an assigned scooter
+- (void)connectScooterWithMACAddress:(NSString *)macAddress completion:(void(^)(BOOL))completion;    // connect a assigned scooter
 - (void)disconnectScooterWithMACAddress:(NSString *)macAddress completion:(void(^)(void))completion; // disconnect an assigned scooter
 - (void)disconnectAllScootersWithCompletion:(void(^)(void))completion;
 - (void)sendCommand:(IOTCommand)command params:(nullable NSArray <NSNumber *> *)params receivedBlock:(nullable void(^)(NSDictionary *))receivedBlock;
